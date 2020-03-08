@@ -1,0 +1,114 @@
+body 
+{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container .card
+{
+    padding: 20px 15px;
+    border-radius: 0 20px 0 20px;
+    width: 25%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3);
+    /* transition: ease-in-out all .5s; */
+    /* border: 1px solid rgba(0, 0, 0, .3); */
+}
+
+/* .container .card:hover
+{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3);
+} */
+/* .container .card .box-image 
+{
+    border-radius: 10px;
+    overflow: hidden;
+} */
+
+.container .card .box-image 
+{
+    position: relative;
+    width: 100%;
+}
+
+/* .container .card .box-image::before
+{
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.container .card .box-image:hover::before
+{
+    box-shadow: 0 0 0 5px red inset;
+} */
+
+.container .card .box-image img 
+{
+    width: 100%;
+    transition: .5s all ease-in-out;
+}
+
+.container .card .box-image .fas
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -500%);
+    font-size: 40px;
+    color: white;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.container .card .box-image:hover .fas
+{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.container .card .box-image:hover img 
+{
+    filter: brightness(.5);
+}
+
+.container .card figcaption .title
+{
+    text-align: center;
+    font-size: 11px;
+}
+.container .card figcaption .date-price
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.container .card figcaption .date-price .price
+{
+    color: red;
+    font-weight: bold;
+    font-weight: 11px;
+}
+
+.container .card figcaption .date-price .date 
+{
+    font-weight: bold;
+    color: #b2bec3;
+    font-size: 13px;
+    font-style: italic;
+}
